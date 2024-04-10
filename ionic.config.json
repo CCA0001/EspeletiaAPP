@@ -1,0 +1,7 @@
+{
+  "name": "EspeletiaAPP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
