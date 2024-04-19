@@ -1,9 +1,4 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      tab1
-    </ion-title>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -12,5 +7,21 @@
       <ion-title size="large"> tab1 </ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-grid>
+    <ion-col size="12">
+      <ion-row class="row__circulo-bluetooth">
+        <app-circulo-de-datos-bluetooth-component></app-circulo-de-datos-bluetooth-component>
+      </ion-row>
+      <ion-row class="row__porcentajes">
+        <app-row3-porcentajes-component></app-row3-porcentajes-component>
+      </ion-row>
+      <ion-row class="row__btn-regar">
+        <ion-button> Regar de todas formas </ion-button>
+      </ion-row>
+        <app-history-table-component></app-history-table-component>
+    </ion-col>
+  </ion-grid>
+
 
 </ion-content>

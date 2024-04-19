@@ -4,7 +4,7 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
+  --ion-color-primary: #009d71;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -12,7 +12,7 @@
   --ion-color-primary-tint: #4c8dff;
 
   /** secondary **/
-  --ion-color-secondary: #3dc2ff;
+  --ion-color-secondary: #7a5c3c;
   --ion-color-secondary-rgb: 61, 194, 255;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
@@ -26,6 +26,22 @@
   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
   --ion-color-tertiary-shade: #4854e0;
   --ion-color-tertiary-tint: #6370ff;
+
+  /** quaternary **/
+  --ion-color-quaternary: #e28c0c;
+  --ion-color-quaternary-rgb: 82, 96, 255;
+  --ion-color-quaternary-contrast: #ffffff;
+  --ion-color-quaternary-contrast-rgb: 255, 255, 255;
+  --ion-color-quaternary-shade: #4854e0;
+  --ion-color-quaternary-tint: #6370ff;
+
+      /** quintennial **/
+  --ion-color-quintennial: #d2b293;
+  --ion-color-quintennial-rgb: 82, 96, 255;
+  --ion-color-quintennial-contrast: #ffffff;
+  --ion-color-quintennial-contrast-rgb: 255, 255, 255;
+  --ion-color-quintennial-shade: #4854e0;
+  --ion-color-quintennial-tint: #6370ff;
 
   /** success **/
   --ion-color-success: #2dd36f;
@@ -153,7 +169,7 @@
    */
 
   .ios body {
-    --ion-background-color: #000000;
+    --ion-background-color: #ffffff;
     --ion-background-color-rgb: 0,0,0;
 
     --ion-text-color: #ffffff;
