@@ -8,15 +8,19 @@
     align-items: center;
     justify-items: center;
     height: 100vh;
+    position: relative; /* Añadido */
+
 }
 
 .form__container{
-    height: 100%;
+    position: absolute; /* Añadido */
+    bottom: 0; /* Añadido */
+    height: auto; /* Cambiado de 100% a auto */
 
 }
 
 ion-grid{
-    height: 100vb;
+    height: 100vh; /* Corregido el error de tipografía de 100vb a 100vh */
 }
 
 ion-row{

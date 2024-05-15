@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "995622709674",
+    "project_id": "espeletialogin",
+    "storage_bucket": "espeletialogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995622709674:android:61b4139ea48f17ce95e3d3",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEvrdMDlkF5S8vSMhiUxlyzv0PXki5-Mo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
