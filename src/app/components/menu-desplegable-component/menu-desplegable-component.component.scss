@@ -1,0 +1,13 @@
+.accordion__label{
+    padding: 10px;
+}
+
+.accordion__btn{
+    display: flex;
+    justify-content:  flex-end;
+    padding: 5px 10px;
+}
+
+.btn-secondary{
+    --ion-color-primary: var(--ion-color-secondary)
+}

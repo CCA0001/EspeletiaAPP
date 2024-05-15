@@ -1,0 +1,32 @@
+.row__porcentajes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: fit-content;
+}
+
+.row__porcentaje-uno__label{
+    color: var(--ion-color-quintennial);
+}
+
+.row__porcentaje-dos__label{
+    color: var(--ion-color-secondary);
+}
+
+.row__porcentaje-tres__label{
+    color: var(--ion-color-quaternary);
+}
+
+.row__porcentaje-uno__label, .row__porcentaje-dos__label, .row__porcentaje-tres__label{
+    font-size: 30px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,28 @@
+.background{
+    display: flex;
+    --background: url('../../../assets/img/LivingRoomPlants.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+}
+
+.form__container{
+    height: 100%;
+
+}
+
+ion-grid{
+    height: 100vb;
+}
+
+.form__row-empty{
+    height: 35%
+}
+
+.form__row-register{
+    height: 65%;
+}

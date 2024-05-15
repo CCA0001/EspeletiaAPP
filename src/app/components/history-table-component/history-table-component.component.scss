@@ -1,0 +1,22 @@
+
+.row__registro, .table__last-row{
+    padding-bottom: 7px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-color: lightgrey;
+    font-size: smaller;
+}
+
+.table__header{
+    color: var(--ion-color-medium);
+    font-size: small;
+    border: 2px solid;
+    border-color: lightgrey;
+}
+
+.row__timestamp{
+    font-size: small;
+    color: var(--ion-color-medium);
+    text-align: right;
+}

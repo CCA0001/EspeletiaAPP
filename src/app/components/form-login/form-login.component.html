@@ -1,0 +1,29 @@
+<div class="form__container">
+  
+  <div class="form__inputs">
+    <ion-item class="form__item">
+      <ion-label position="floating"> Nombre de usuario o correo electronico </ion-label>
+      <ion-input type = "email" [(ngModel)] = "enteredEmail"></ion-input>
+    </ion-item>
+
+    <ion-item class="form__item">
+      <ion-label position="floating"> Contraseña </ion-label>
+      <ion-input type = "password" [(ngModel)] = "enteredPassword"></ion-input>
+    </ion-item>
+  </div>
+  
+  <div class="form__forgot-password-label">
+    <ion-label> ¿Olvidaste tu contraseña? </ion-label> 
+  </div>
+
+  <ion-button (click)="authLogin()"> Inicia Sesión </ion-button>
+
+  <div class="form__register-button">
+
+    <ion-label class="label-register"> O si no eres parte de nuestra familia aún... </ion-label>
+
+    <ion-button (click)="redirectToRegister()"> Regístrate </ion-button>
+
+  </div>
+
+</div>

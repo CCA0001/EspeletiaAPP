@@ -1,0 +1,44 @@
+.form__container{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    border-radius: 28px 28px 26px 26px / 26px 26px 28px 28px;}
+
+.form__inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0px 30px ;
+}
+
+.form__item{
+    width: 80%;
+}
+
+
+.form__login-button{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    padding-top: 20px;
+}
+
+.form__login-button ion-button{
+    font-size: smaller;
+    padding-bottom: 10px;
+    --background: transparent;
+    color: var(--ion-color-primary);
+    box-shadow: none;
+    border: none;
+    --box-shadow:var(--background)
+}
+
+.label-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;    
+}

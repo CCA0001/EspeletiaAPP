@@ -1,0 +1,37 @@
+<div class="form__container">
+  
+  <div class="form__inputs">
+
+    <ion-item class="form__item">
+      <ion-label position="floating"> Nombre de Usuario </ion-label>
+      <ion-input type = "text" [(ngModel)] = "enteredUserName"></ion-input>
+    </ion-item>
+
+    <ion-item class="form__item">
+      <ion-label position="floating"> Correo electronico </ion-label>
+      <ion-input type = "email" [(ngModel)] = "enteredEmail"></ion-input>
+    </ion-item>
+
+    <ion-item class="form__item">
+      <ion-label position="floating"> Contraseña </ion-label>
+      <ion-input type = "password" [(ngModel)] = "enteredPassword"></ion-input>
+    </ion-item>
+
+    <ion-item class="form__item">
+      <ion-label position="floating"> Numero en serie de su ESPELETIA </ion-label>
+      <ion-input type = "number" [(ngModel)] = "enteredSerialNumber"></ion-input>
+    </ion-item>
+
+  </div>
+
+  <ion-button (click)="authRegister()"> Registrar </ion-button>
+
+  <div class="form__login-button">
+
+    <ion-label class="label-login"> ¿Ya tienes una cuenta? </ion-label>
+
+    <ion-button (click)="redirectToLogin()"> Inicia Sesión </ion-button>
+
+  </div>
+
+</div>
