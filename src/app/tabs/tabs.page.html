@@ -1,17 +1,17 @@
 <ion-tabs>
 
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="Home" href="/tabs/home">
+    <ion-tab-button tab="home" [routerLink]="['/tabs/home']">
       <ion-icon name="home-sharp"></ion-icon>
       <ion-label>Home</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="dispositivos" href="/tabs/dispositivos">
+    <ion-tab-button tab="dispositivos" [routerLink]="['/tabs/dispositivos']">
       <ion-icon name="leaf-sharp"></ion-icon>      
       <ion-label>Dispositivos</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="ajustes" href="/tabs/ajustes">
+    <ion-tab-button tab="ajustes" [routerLink]="['/tabs/ajustes']">
       <ion-icon name="settings-sharp"></ion-icon>      
       <ion-label>Ajustes</ion-label>
     </ion-tab-button>

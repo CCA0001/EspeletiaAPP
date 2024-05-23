@@ -5,16 +5,21 @@ import { FormsModule } from '@angular/forms';
 import { Tab2Page } from './tab2.page';
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
-import { HistoryTableComponentComponent } from '../components/history-table-component/history-table-component.component';
+import { FormatoEspeletiaModuleModule } from '../components/formato-espeletia-module/formato-espeletia-module.module';
+import { MenuDesplegableComponentComponent } from '../components/menu-desplegable-component/menu-desplegable-component.component';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    Tab2PageRoutingModule
+    Tab2PageRoutingModule,
+    FormatoEspeletiaModuleModule
+    
+
   ],
   declarations: [Tab2Page,
+    MenuDesplegableComponentComponent
     
   ]
 })

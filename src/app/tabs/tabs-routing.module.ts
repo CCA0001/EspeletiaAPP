@@ -9,26 +9,49 @@ const routes: Routes = [
     children: [
       {
         path: 'home',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        children : [
+          {
+            path: '',
+            loadChildren: () => 
+                import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+
+          }
+        ]
       },
       {
         path: 'dispositivos',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        children : [
+          {
+            path : '',
+            loadChildren: () => 
+              import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+          }
+        ]
       },
       {
         path: 'ajustes',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        children : [
+          {
+            path : '',
+            loadChildren: () => 
+              import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+
+          }
+        ]
       },
       {
         path: '',
-        redirectTo: '/home',
+        redirectTo: '/tabs/home',
         pathMatch: 'full'
       }
     ]
   },
   {
-    path: 'home',
-    loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+    path : '',
+    redirectTo: '/tabs/home',
+    pathMatch: 'full'
+
+
   }
 ];
 

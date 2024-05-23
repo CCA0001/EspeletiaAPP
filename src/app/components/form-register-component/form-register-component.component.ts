@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -11,21 +12,50 @@ export class FormRegisterComponentComponent  implements OnInit {
   enteredPassword : string = "";
   enteredEmail : string = "";
   enteredUserName: string = "";
-  enteredSerialNumber : number = 0;
+  enteredSerialCode : string = "";
+  urlApi : string = 'http://localhost/apiUsersEspeletiaApp/';
+  isRegisterPage : boolean = false;
 
-  constructor( private router : Router) { }
+
+  constructor( private router : Router, private http : HttpClient) { }
 
   ngOnInit() {}
 
-
-  authRegister(){
-    alert("Su cuenta ha sido creada, por favor inicie sesión");
-    this.redirectToLogin();
-  }
 
   redirectToLogin(){
 
     this.router.navigate(['/login']);
   }
 
+
+  authRegister(){
+
+    const registerData = {
+      username : this.enteredUserName,
+      email : this.enteredEmail,
+      password : this.enteredPassword,
+      serialCode : this.enteredSerialCode,
+      isRegisterPage : true
+    }  
+
+    this.http.post(this.urlApi, registerData).subscribe((Response : any) => {
+
+      if(Response.success){ 
+
+        alert("Su cuenta ha sido creada, por favor inicie sesión");
+        this.redirectToLogin();
+
+      } else {
+
+        alert(Response.message);
+
+      }
+    }, (error) => {
+
+      alert('Ha ocurrido un error. Por favor, intentelo otra vez');
+      console.error(error);
+
+    });
+
+  }
 }
