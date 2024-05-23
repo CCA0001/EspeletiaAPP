@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +9,16 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor( private router : Router, private http : HttpClient) {}
+
+  ngOnInit(){
+            // Suscribirse a eventos de navegación del router
+            this.router.events.subscribe(event => {
+              if (event instanceof NavigationEnd) {
+                // Log del URL después de redirección
+                console.log('NavigationEnd:', event.urlAfterRedirects);
+              }
+            });
+  }
 
 }
